@@ -1,0 +1,74 @@
+{
+  "sequence": 0,
+  "type": "seed_import",
+  "imported_at": "2026-11-06T00:02:49Z",
+  "source_checkpoint": {
+    "library_file_id": "libfile_8aa80aa96f2c8191b2fac7eb98165149",
+    "name": "AI-Pie-checkpoint.md",
+    "created_at": "2026-11-05T00:07:00.476346Z"
+  },
+  "decision_recorded_before_open": true,
+  "decision_evidence_timestamp": "2026-11-05T00:07:00.476346Z",
+  "decision_timestamp_note": "Timestamp of durable checkpoint, not a newly created historical decision. Actual import timestamp is imported_at.",
+  "signal_session": "2026-11-04",
+  "intended_session": "2026-11-05",
+  "intended_open_at": "2026-11-05T14:30:00Z",
+  "initial_usd_per_portfolio": 1000,
+  "initial_usd_per_sleeve": 125,
+  "targets": {
+    "original_sma50": {
+      "CRDO": false,
+      "ALAB": false,
+      "COHR": false,
+      "CDNS": true,
+      "SNPS": true,
+      "FN": false,
+      "PLTR": false,
+      "POET": false
+    },
+    "buy_and_hold": {
+      "CRDO": true,
+      "ALAB": true,
+      "COHR": true,
+      "CDNS": true,
+      "SNPS": true,
+      "FN": true,
+      "PLTR": true,
+      "POET": true
+    }
+  },
+  "seed_inputs": {
+    "CRDO": {
+      "close": 136.5,
+      "sma50": 183.3501
+    },
+    "ALAB": {
+      "close": 223.27,
+      "sma50": 304.9446
+    },
+    "COHR": {
+      "close": 195.09,
+      "sma50": 274.5596
+    },
+    "CDNS": {
+      "close": 329.52,
+      "sma50": 320.8474
+    },
+    "SNPS": {
+      "close": 462.95,
+      "sma50": 441.2914
+    },
+    "FN": {
+      "close": 341.64,
+      "sma50": 398.89
+    },
+    "PLTR": {
+      "close": 171.7,
+      "sma50": 186.8424
+    },
+    "POET": {
+      "close": 4.88,
+      "sma50": 6.8998
+    }
+  }
+}

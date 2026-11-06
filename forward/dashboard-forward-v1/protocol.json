@@ -1,0 +1,71 @@
+{
+  "experiment": "dashboard-forward-v1",
+  "version": 1,
+  "created_at": "2026-11-06T00:02:49Z",
+  "simulation_only": true,
+  "source_checkpoint": {
+    "library_file_id": "libfile_8aa80aa96f2c8191b2fac7eb98165149",
+    "name": "AI-Pie-checkpoint.md",
+    "created_at": "2026-11-05T00:07:00.476346Z"
+  },
+  "repository": "rafalsaksuk-lab/AI-PIE-VERSION-2",
+  "branch": "research/dashboard-forward-v1",
+  "base_commit": "517bd5b0fdc40d0da674f65e46cfd1319d6e3149",
+  "portfolios": [
+    "original_sma50",
+    "buy_and_hold"
+  ],
+  "currency": "USD",
+  "initial_per_portfolio": 1000,
+  "symbols": [
+    "CRDO",
+    "ALAB",
+    "COHR",
+    "CDNS",
+    "SNPS",
+    "FN",
+    "PLTR",
+    "POET"
+  ],
+  "initial_sleeve_usd": 125,
+  "cost_per_side": 0.001,
+  "signal": "After complete regular session: invested if close strictly greater than arithmetic mean of latest 50 complete session closes including current session; else cash.",
+  "execution": "Next regular-session Alpaca SIP daily open; only targets durably recorded before that open. Buy shares=sleeve_cash/(open*1.001); sell proceeds=shares*open*.999. Fractional shares; daily marks approximate executable fills.",
+  "benchmark": "Buy all eight at first eligible seed session open, then hold.",
+  "seed_intended_session": "2026-11-05",
+  "seed_strategy_invested": [
+    "CDNS",
+    "SNPS"
+  ],
+  "cash_interest": 0,
+  "fx": false,
+  "rebalancing": false,
+  "deposits": false,
+  "data": {
+    "provider": "Alpaca",
+    "feed": "sip",
+    "timeframe": "1Day",
+    "currency": "USD",
+    "adjustment": "raw (endpoint default)",
+    "session_timezone": "America/New_York",
+    "documentation": [
+      "https://docs.alpaca.markets/us/reference/stockbars",
+      "https://docs.alpaca.markets/us/docs/market-data-faq"
+    ],
+    "daily_bar_note": "Alpaca daily price fields exclude extended-hours T/U trades; minute and daily condition rules differ. Use daily open/close as frozen, not last minute/after-hours prints."
+  },
+  "gates": [
+    "Read protocol and all existing ledger records before each run.",
+    "Require complete unique chronological calendar-matching daily bars, finite positive OHLC and 50 complete closes.",
+    "Check corporate actions across SMA lookback and since previous observation. Unresolved adjustment or corporate action issues quarantine; never mix bases or silently adjust ledger.",
+    "Observe only complete sessions; timestamp observation and persist next execution session before its open.",
+    "Do not invent missed targets. Previously recorded actions and later valuations may be observed later.",
+    "Idempotency by session: append a new numbered ledger record only if not already recorded. Never overwrite prior ledger or source snapshot; append correction evidence for review instead.",
+    "Verify committed ledger/targets before claiming persistence. Failed ref update means tracking blocked."
+  ],
+  "review_after_completed_sessions": 20,
+  "pause_after_review": true,
+  "gbp_experiment_continues": true,
+  "no_rule_tuning": true,
+  "storage": "ledger/*.json is append-only ordered event ledger. sources/*.json are immutable input snapshots. report.md is a derived view."
+}

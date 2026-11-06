@@ -1,0 +1,331 @@
+{
+  "sequence": 1,
+  "type": "completed_session",
+  "previous_record": "0000-seed.json",
+  "session": "2026-11-05",
+  "observed_at": "2026-11-06T00:02:49Z",
+  "completed_session_count": 1,
+  "next_execution_session": "2026-11-06",
+  "next_execution_open_at": "2026-11-06T14:30:00Z",
+  "source_snapshot": "sources/2026-11-05.json",
+  "signals": {
+    "CRDO": {
+      "close": 112.33,
+      "sma50": 181.06690000000003,
+      "target_invested": false
+    },
+    "ALAB": {
+      "close": 179.47,
+      "sma50": 302.728,
+      "target_invested": false
+    },
+    "COHR": {
+      "close": 169.76,
+      "sma50": 272.0674000000001,
+      "target_invested": false
+    },
+    "CDNS": {
+      "close": 311.43,
+      "sma50": 320.38239999999996,
+      "target_invested": false
+    },
+    "SNPS": {
+      "close": 440.31,
+      "sma50": 441.89760000000007,
+      "target_invested": false
+    },
+    "FN": {
+      "close": 292.97,
+      "sma50": 395.9934000000001,
+      "target_invested": false
+    },
+    "PLTR": {
+      "close": 154.99,
+      "sma50": 186.3922,
+      "target_invested": false
+    },
+    "POET": {
+      "close": 4.26,
+      "sma50": 6.823399999999998,
+      "target_invested": false
+    }
+  },
+  "portfolios": {
+    "original_sma50": {
+      "initial_usd": 1000,
+      "value_usd": 991.7266991086859,
+      "profit_usd": -8.27330089131408,
+      "peak_usd": 1000,
+      "max_drawdown_pct": 0.8273300891314062,
+      "costs_usd": 0.2497502497502498,
+      "trade_count": 2,
+      "sleeves": {
+        "CRDO": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 112.33,
+          "value_usd": 125
+        },
+        "ALAB": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 179.47,
+          "value_usd": 125
+        },
+        "COHR": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 169.76,
+          "value_usd": 125
+        },
+        "CDNS": {
+          "cash": 0,
+          "shares": 0.3877627775280241,
+          "costs_usd": 0.1248751248751249,
+          "close": 311.43,
+          "value_usd": 120.76096180555255
+        },
+        "SNPS": {
+          "cash": 0,
+          "shares": 0.27472857146813234,
+          "costs_usd": 0.12487512487512488,
+          "close": 440.31,
+          "value_usd": 120.96573730313335
+        },
+        "FN": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 292.97,
+          "value_usd": 125
+        },
+        "PLTR": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 154.99,
+          "value_usd": 125
+        },
+        "POET": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 4.26,
+          "value_usd": 125
+        }
+      },
+      "fills": [
+        {
+          "symbol": "CDNS",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 322.04,
+          "shares": 0.3877627775280241,
+          "fee_usd": 0.1248751248751249,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "SNPS",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 454.54,
+          "shares": 0.27472857146813234,
+          "fee_usd": 0.12487512487512488,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        }
+      ],
+      "pending_actions": [
+        {
+          "symbol": "CDNS",
+          "side": "SELL",
+          "intended_session": "2026-11-06",
+          "intended_open_at": "2026-11-06T14:30:00Z"
+        },
+        {
+          "symbol": "SNPS",
+          "side": "SELL",
+          "intended_session": "2026-11-06",
+          "intended_open_at": "2026-11-06T14:30:00Z"
+        }
+      ]
+    },
+    "buy_and_hold": {
+      "initial_usd": 1000,
+      "value_usd": 913.7516015587365,
+      "profit_usd": -86.24839844126348,
+      "peak_usd": 1000,
+      "max_drawdown_pct": 8.624839844126353,
+      "costs_usd": 0.999000999000999,
+      "trade_count": 8,
+      "sleeves": {
+        "CRDO": {
+          "cash": 0,
+          "shares": 0.961317358545996,
+          "costs_usd": 0.12487512487512488,
+          "close": 112.33,
+          "value_usd": 107.98477888547173
+        },
+        "ALAB": {
+          "cash": 0,
+          "shares": 0.5906774744578066,
+          "costs_usd": 0.1248751248751249,
+          "close": 179.47,
+          "value_usd": 106.00888634094255
+        },
+        "COHR": {
+          "cash": 0,
+          "shares": 0.6768116033447598,
+          "costs_usd": 0.1248751248751249,
+          "close": 169.76,
+          "value_usd": 114.8955377838064
+        },
+        "CDNS": {
+          "cash": 0,
+          "shares": 0.3877627775280241,
+          "costs_usd": 0.1248751248751249,
+          "close": 311.43,
+          "value_usd": 120.76096180555255
+        },
+        "SNPS": {
+          "cash": 0,
+          "shares": 0.27472857146813234,
+          "costs_usd": 0.12487512487512488,
+          "close": 440.31,
+          "value_usd": 120.96573730313335
+        },
+        "FN": {
+          "cash": 0,
+          "shares": 0.38781094681715805,
+          "costs_usd": 0.1248751248751249,
+          "close": 292.97,
+          "value_usd": 113.6169730890228
+        },
+        "PLTR": {
+          "cash": 0,
+          "shares": 0.7490335295271864,
+          "costs_usd": 0.12487512487512488,
+          "close": 154.99,
+          "value_usd": 116.09270674141862
+        },
+        "POET": {
+          "cash": 0,
+          "shares": 26.62582619938697,
+          "costs_usd": 0.12487512487512491,
+          "close": 4.26,
+          "value_usd": 113.42601960938849
+        }
+      },
+      "fills": [
+        {
+          "symbol": "CRDO",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 129.9,
+          "shares": 0.961317358545996,
+          "fee_usd": 0.12487512487512488,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "ALAB",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 211.41,
+          "shares": 0.5906774744578066,
+          "fee_usd": 0.1248751248751249,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "COHR",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 184.505,
+          "shares": 0.6768116033447598,
+          "fee_usd": 0.1248751248751249,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "CDNS",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 322.04,
+          "shares": 0.3877627775280241,
+          "fee_usd": 0.1248751248751249,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "SNPS",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 454.54,
+          "shares": 0.27472857146813234,
+          "fee_usd": 0.12487512487512488,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "FN",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 322,
+          "shares": 0.38781094681715805,
+          "fee_usd": 0.1248751248751249,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "PLTR",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 166.715,
+          "shares": 0.7490335295271864,
+          "fee_usd": 0.12487512487512488,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        },
+        {
+          "symbol": "POET",
+          "side": "BUY",
+          "session": "2026-11-05",
+          "execution_at": "2026-11-05T14:30:00Z",
+          "price": 4.69,
+          "shares": 26.62582619938697,
+          "fee_usd": 0.12487512487512491,
+          "decision": "0000-seed",
+          "execution_model": "Alpaca SIP daily opening mark"
+        }
+      ],
+      "pending_actions": []
+    }
+  },
+  "data_failures": [],
+  "missing_signal_sessions": [],
+  "checks": {
+    "all_8_symbols": true,
+    "calendar_sessions_per_symbol": 55,
+    "complete_sma_sessions": 50,
+    "seed_closes_and_sma50_match": true,
+    "corporate_actions_returned": 0,
+    "adjustment_basis": "raw; no reported corporate actions over lookback",
+    "prospective_next_open": true
+  },
+  "status": "active",
+  "review_at_completed_sessions": 20
+}
