@@ -2,11 +2,35 @@ import pandas as pd
 import streamlit as st
 from engine import WATCHLIST, validate_prices, simulate, metrics
 from pathlib import Path
+from integrations.tools import registry
 
 st.set_page_config(page_title="AI PIE VERSION 2", layout="wide")
 st.title("AI PIE VERSION 2")
 st.caption("AI Growth stocks • Research and simulation only")
-results_tab, experiment_tab = st.tabs(["Backtest Results", "Experiment"])
+results_tab, experiment_tab, tools_tab = st.tabs(
+    ["Backtest Results", "Experiment", "Research Tools"]
+)
+with tools_tab:
+    st.write(
+        "Optional tools for the eight AI Growth stocks. These adapters are separate from the current paper experiment."
+    )
+    st.dataframe(
+        pd.DataFrame(
+            [
+                {"Tool": name, "Purpose": item["role"], "Status": item["status"]}
+                for name, item in registry().items()
+            ]
+        ),
+        hide_index=True,
+    )
+    for name, item in registry().items():
+        st.markdown(f"[{name}]({item['url']})")
+    st.info(
+        "No external models run from this dashboard. No new profitability results are available. Kronos needs additional high/low price data; TradingAgents needs a configured model provider. Qlib and LEAN need separate runtimes."
+    )
+    st.markdown(
+        "[Setup and test guide](https://github.com/rafalsaksuk-lab/AI-PIE-VERSION-2/blob/research/optional-research-tools/integrations/README.md)"
+    )
 with results_tab:
     research = Path(__file__).parent / "research"
     summary = pd.read_csv(research / "summary.csv")
