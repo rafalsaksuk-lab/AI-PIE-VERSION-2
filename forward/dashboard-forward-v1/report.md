@@ -2,19 +2,19 @@
 
 Simulation only. Independent from the GBP experiment.
 
-Market session: 2026-11-05. Observed at: 2026-11-06T00:02:49Z. Completed sessions: 1 of 20 before review and pause.
+Market session: 2026-11-06. Observed at: 2026-11-06T23:07:50Z. Completed sessions: 2 of 20 before review and pause.
 
 | Portfolio | Value USD | Profit USD | Max drawdown % | Trades | Costs USD |
 |---|---:|---:|---:|---:|---:|
-| original_sma50 | 991.73 | -8.27 | 0.83 | 2 | 0.25 |
-| buy_and_hold | 913.75 | -86.25 | 8.62 | 8 | 1.00 |
+| original_sma50 | 995.66 | -4.34 | 0.83 | 4 | 0.50 |
+| buy_and_hold | 988.79 | -11.21 | 8.62 | 8 | 1.00 |
 
-Fills: original SMA50 bought CDNS and SNPS; benchmark bought all eight, using the 5 November daily opening marks. These implement seed targets durably recorded in the 5 November 00:07 UTC checkpoint before the open; they are not backfilled signals.
+Fills: Original SMA50 sold CDNS at 315.50 and SNPS at 449.78 using November 6 daily opening marks, implementing targets durably committed on November 6 at 00:03:11Z, before the 14:30Z open. Benchmark had no new fills.
 
-Pending: original SMA50 SELL CDNS and SELL SNPS for 6 November 2026 regular open (14:30 UTC). All eight latest close/SMA50 targets are cash; other six strategy sleeves remain cash. Benchmark holds all eight. Pending actions are not fills.
+Pending: Original SMA50 BUY CDNS and BUY SNPS for November 9 regular open at 14:30 UTC. CDNS close 319.92 > SMA50 319.8298; SNPS close 450.46 > SMA50 441.6090. Other six strategy sleeves remain cash. Benchmark holds all eight. Pending actions are not completed fills.
 
-Data checks: 55 calendar-aligned complete daily sessions per symbol, latest 50 used for SMA; all seed close/SMA50 values reproduced; no corporate actions returned for 20 August–6 November; zero missing bars or signal sessions. Raw Alpaca SIP daily basis. Daily and minute bars have different trade-condition filters; the frozen daily marks are used. No after-hours price substitution.
+Data checks: 56 complete calendar-aligned daily sessions per symbol; latest 50 used for SMA. All prior snapshot OHLC fields unchanged. No corporate actions returned for August 20–November 9. Zero missing bars or signal sessions. Initial Alpaca requests timed out; retries succeeded before this observation. Raw Alpaca SIP daily basis; no after-hours substitution.
 
-Costs: 0.10% each side; fractional shares; no FX, deposits, rebalancing or cash interest. Drawdown includes initial USD1000 and recorded closing values, not intraday lows. These are approximate paper fills, not real money earned or lost. One session establishes no trading edge.
+Costs: 0.10% per side, fractional shares, no FX, deposits, rebalancing or cash interest. Maximum drawdown includes initial USD1000 and recorded closing values, not intraday lows. Daily price marks approximate executable fills.
 
-Read protocol.json and ledger/ before each run. Ledger and source snapshots are append-only. After 20 completed sessions review and pause this USD experiment; continue the GBP experiment. No main changes, deployment, merging or rule tuning.
+Append-only ledger and source snapshots. Review and pause after 20 completed sessions; continue GBP experiment. No rule tuning. Two sessions cannot establish an edge.
