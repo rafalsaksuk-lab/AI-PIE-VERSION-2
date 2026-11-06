@@ -43,3 +43,11 @@ The first version has a small transparent simulation engine. Backtesting.py and 
 Install `requirements-dev.txt`, then run `python -m ruff check .`, `python -m ruff format --check .`, `python -m coverage run -m pytest -q`, and `python -m coverage report`. GitHub Actions repeats these on Python 3.11 and 3.12 for pushes and pull requests and saves test/coverage artifacts. Coverage measures exercised code, not investment reliability.
 
 Tools used: pytest (tests), Streamlit AppTest (dashboard interaction), Coverage.py (engine coverage), Ruff (code checks), GitHub Actions (automation). Backtesting.py and QuantStats remain future independent cross-check/report integrations. This version does not yet aggregate all eight stocks into a weighted portfolio.
+
+# Optional research integrations
+
+TradingAgents, Microsoft Qlib, Kronos and QuantConnect LEAN adapters are documented
+in [integrations/README.md](integrations/README.md). These are isolated research
+tools, not additional verified profitable bots. The Research Tools tab shows
+their setup status; no external model runs from the dashboard.
+
