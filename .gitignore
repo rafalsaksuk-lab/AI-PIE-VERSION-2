@@ -8,3 +8,10 @@ coverage.xml
 test-results.xml
 .pytest_cache/
 .ruff_cache/
+
+# Optional research tools: models, dependencies, private reports and caches.
+external/
+.venvs/
+research-runs/
+.env.*
+
