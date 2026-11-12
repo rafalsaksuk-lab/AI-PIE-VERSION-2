@@ -1,0 +1,34 @@
+{
+  "kronos": {
+    "url": "https://github.com/shiyu-coder/Kronos",
+    "commit": "67b630e67f6a18c9e9be918d9b4337c960db1e9a",
+    "role": "Price forecasts",
+    "status": "Not installed or externally tested",
+    "pin_verified_on": "2026-11-12",
+    "pin_note": "Candidate revision; compatibility not yet verified"
+  },
+  "qlib": {
+    "url": "https://github.com/microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "role": "Historical feature research",
+    "status": "Not installed or externally tested",
+    "pin_verified_on": "2026-11-12",
+    "pin_note": "Candidate revision; compatibility not yet verified"
+  },
+  "tradingagents": {
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "commit": "9fa1196fffbcfd9de5146d2dd2869df84ab99838",
+    "role": "Separate AI research reports",
+    "status": "Not installed or externally tested",
+    "pin_verified_on": "2026-11-12",
+    "pin_note": "Candidate revision; compatibility not yet verified"
+  },
+  "lean": {
+    "url": "https://github.com/QuantConnect/Lean",
+    "commit": "0b5c3db88b2e0ad4b4252fd3617b53b9bd90579c",
+    "role": "Independent backtest cross-check (export only)",
+    "status": "Not installed or externally tested",
+    "pin_verified_on": "2026-11-12",
+    "pin_note": "Candidate revision; compatibility not yet verified"
+  }
+}
