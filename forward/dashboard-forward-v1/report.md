@@ -1,17 +1,18 @@
 # USD dashboard forward paper comparison
 
-Simulation only; no real orders.
+Simulation only. Two independent USD 1,000 portfolios.
 
-Market session: 2026-11-13. Observed: 2026-11-13T23:14:44Z.
-Completed sessions: 7 of 20 before review and pause.
+Market session: 2026-11-16
+Observed at: 2026-11-16T23:37:42Z
+Completed sessions: 8 of 20; active. Review and pause at 20 completed sessions.
 
 | Portfolio | Value USD | Profit USD | Maximum drawdown % | Trades | Costs USD |
 |---|---:|---:|---:|---:|---:|
-| Original SMA50 | 994.95 | -5.05 | 0.83 | 6 | 0.74 |
-| Buy and hold | 1045.02 | 45.02 | 8.62 | 8 | 1.00 |
+| original_sma50 | 986.08 | -13.92 | 1.71 | 6 | 0.74 |
+| buy_and_hold | 979.30 | -20.70 | 11.52 | 8 | 1.00 |
 
-No fills this session. No pending actions for 2026-11-16 at 14:30 UTC. SMA50 retains CDNS and SNPS; six other sleeves remain cash. Benchmark retains all eight.
+No simulated fills this session. Pending original SMA50 sells: CDNS and SNPS, intended for 17 November 2026 regular open (14:30 UTC). Benchmark: no pending actions.
 
-Data: Alpaca SIP raw regular daily bars; 61 calendar-matching sessions per symbol, latest 50 used for SMA. Prior OHLC unchanged. No corporate actions returned across lookback through next session. No missing signal sessions or data failures.
+All eight symbols have 62 calendar-matched SIP daily bars, with 50 complete sessions for each SMA. Prior OHLC matches the saved snapshot. No corporate actions returned for the lookback through the next session. Raw adjustment basis. No data failures or missed signal sessions.
 
-Costs are cumulative and included in value. Drawdown includes the initial USD1000. No FX, interest, deposits or rebalancing. Daily opening marks approximate fills. No retrospective targets. Review and pause after 20 completed sessions; GBP experiment continues. Short sample does not establish an edge.
+Maximum drawdown includes initial USD 1,000. Costs: 0.10% each buy/sell. No FX, deposits, rebalancing or cash interest. Decisions are prospective; no missed targets were invented. Short sample does not establish an edge.
