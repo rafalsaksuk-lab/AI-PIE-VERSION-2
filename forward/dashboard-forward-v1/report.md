@@ -1,18 +1,14 @@
 # USD dashboard forward paper comparison
 
-Simulation only. Two independent USD 1,000 portfolios.
+Session: 2026-11-23. Observed: 2026-11-23T23:37:55Z. Completed sessions: 13/20. Status: active.
 
-Market session: 2026-11-20
-Observed at: 2026-11-20T23:10:01Z
-Completed sessions: 12 of 20; active. Review and pause at 20 completed sessions.
-
-| Portfolio | Value USD | Profit USD | Maximum drawdown % | Trades | Costs USD |
+| Portfolio | Value USD | Profit USD | Maximum drawdown | Trades | Costs USD |
 |---|---:|---:|---:|---:|---:|
-| original_sma50 | 985.39 | -14.61 | 1.78 | 8 | 0.98 |
-| buy_and_hold | 856.34 | -143.66 | 22.63 | 8 | 1.00 |
+| original_sma50 | 985.39 | -14.61 | 1.78% | 8 | 0.98 |
+| buy_and_hold | 982.17 | -17.83 | 22.63% | 8 | 1.00 |
 
-No simulated fills today. Original SMA50 remains entirely cash. No pending actions for 23 November; all eight closes are below their SMA50. Benchmark retains all eight holdings.
+No fills this session. No pending actions for 2026-11-24. Original SMA50 remains entirely in cash; benchmark holds all eight stocks. All eight closes remain below SMA50.
 
-All eight symbols have 66 calendar-matched SIP daily bars, including 50 complete closes for SMA. Prior OHLC unchanged; no corporate actions returned across lookback through next session. Raw adjustment basis. No missing signal sessions or data failures.
+Verified 67 SIP daily sessions per symbol, latest 50 complete sessions for signals, unchanged prior OHLC and no returned corporate actions over the lookback. Raw adjustment basis retained. No data failures or missed signal sessions.
 
-Maximum drawdown includes initial $1,000. Costs 0.10% per side. No interest, FX, rebalancing or deposits. Daily opening marks approximate execution. No backfilled signals. Short sample does not establish an edge.
+Simulation only. Review and pause after 20 completed sessions; short results do not establish an edge.
