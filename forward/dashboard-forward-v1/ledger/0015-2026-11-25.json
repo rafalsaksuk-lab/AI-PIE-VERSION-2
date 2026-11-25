@@ -1,0 +1,206 @@
+{
+  "sequence": 15,
+  "type": "completed_session",
+  "previous_record": "0014-2026-11-24.json",
+  "session": "2026-11-25",
+  "observed_at": "2026-11-25T23:23:37Z",
+  "completed_session_count": 15,
+  "next_execution_session": "2026-11-27",
+  "next_execution_open_at": "2026-11-27T14:30:00Z",
+  "source_snapshot": "sources/2026-11-25.json",
+  "signals": {
+    "CRDO": {
+      "close": 106.795,
+      "sma50": 164.87079999999997,
+      "target_invested": false
+    },
+    "ALAB": {
+      "close": 190.34,
+      "sma50": 281.7078000000001,
+      "target_invested": false
+    },
+    "COHR": {
+      "close": 196.19,
+      "sma50": 251.74880000000002,
+      "target_invested": false
+    },
+    "CDNS": {
+      "close": 294.89,
+      "sma50": 323.5428999999999,
+      "target_invested": false
+    },
+    "SNPS": {
+      "close": 405.09,
+      "sma50": 450.8334,
+      "target_invested": false
+    },
+    "FN": {
+      "close": 289.7,
+      "sma50": 373.6124,
+      "target_invested": false
+    },
+    "PLTR": {
+      "close": 163.59,
+      "sma50": 182.5386,
+      "target_invested": false
+    },
+    "POET": {
+      "close": 3.58,
+      "sma50": 5.954199999999998,
+      "target_invested": false
+    }
+  },
+  "portfolios": {
+    "original_sma50": {
+      "initial_usd": 1000,
+      "value_usd": 985.3901659925353,
+      "profit_usd": -14.609834007464656,
+      "peak_usd": 1003.2242784708612,
+      "max_drawdown_pct": 1.777679514047359,
+      "costs_usd": 0.9766978660800804,
+      "trade_count": 8,
+      "sleeves": {
+        "CRDO": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 106.795,
+          "value_usd": 125
+        },
+        "ALAB": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 190.34,
+          "value_usd": 125
+        },
+        "COHR": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 196.19,
+          "value_usd": 125
+        },
+        "CDNS": {
+          "cash": 115.77877856988002,
+          "shares": 0,
+          "costs_usd": 0.4852036768596898,
+          "close": 294.89,
+          "value_usd": 115.77877856988002
+        },
+        "SNPS": {
+          "cash": 119.61138742265531,
+          "shares": 0,
+          "costs_usd": 0.4914941892203904,
+          "close": 405.09,
+          "value_usd": 119.61138742265531
+        },
+        "FN": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 289.7,
+          "value_usd": 125
+        },
+        "PLTR": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 163.59,
+          "value_usd": 125
+        },
+        "POET": {
+          "cash": 125,
+          "shares": 0,
+          "costs_usd": 0,
+          "close": 3.58,
+          "value_usd": 125
+        }
+      },
+      "fills": [],
+      "pending_actions": []
+    },
+    "buy_and_hold": {
+      "initial_usd": 1000,
+      "value_usd": 903.7179529177802,
+      "profit_usd": -96.28204708221983,
+      "peak_usd": 1106.762518405211,
+      "max_drawdown_pct": 22.62615256934999,
+      "costs_usd": 0.999000999000999,
+      "trade_count": 8,
+      "sleeves": {
+        "CRDO": {
+          "cash": 0,
+          "shares": 0.961317358545996,
+          "costs_usd": 0.12487512487512488,
+          "close": 106.795,
+          "value_usd": 102.66388730591964
+        },
+        "ALAB": {
+          "cash": 0,
+          "shares": 0.5906774744578066,
+          "costs_usd": 0.1248751248751249,
+          "close": 190.34,
+          "value_usd": 112.42955048829891
+        },
+        "COHR": {
+          "cash": 0,
+          "shares": 0.6768116033447598,
+          "costs_usd": 0.1248751248751249,
+          "close": 196.19,
+          "value_usd": 132.78366846020842
+        },
+        "CDNS": {
+          "cash": 0,
+          "shares": 0.3877627775280241,
+          "costs_usd": 0.1248751248751249,
+          "close": 294.89,
+          "value_usd": 114.34736546523904
+        },
+        "SNPS": {
+          "cash": 0,
+          "shares": 0.27472857146813234,
+          "costs_usd": 0.12487512487512488,
+          "close": 405.09,
+          "value_usd": 111.28979701602573
+        },
+        "FN": {
+          "cash": 0,
+          "shares": 0.38781094681715805,
+          "costs_usd": 0.1248751248751249,
+          "close": 289.7,
+          "value_usd": 112.34883129293068
+        },
+        "PLTR": {
+          "cash": 0,
+          "shares": 0.7490335295271864,
+          "costs_usd": 0.12487512487512488,
+          "close": 163.59,
+          "value_usd": 122.53439509535242
+        },
+        "POET": {
+          "cash": 0,
+          "shares": 26.62582619938697,
+          "costs_usd": 0.12487512487512491,
+          "close": 3.58,
+          "value_usd": 95.32045779380536
+        }
+      },
+      "fills": [],
+      "pending_actions": []
+    }
+  },
+  "data_failures": [],
+  "missing_signal_sessions": [],
+  "checks": {
+    "all_8_symbols": true,
+    "calendar_sessions_per_symbol": 69,
+    "complete_sma_sessions": 50,
+    "prior_ohlc_unchanged": true,
+    "corporate_actions_returned": 0,
+    "adjustment_basis": "raw; no reported corporate actions over lookback",
+    "prospective_next_open": true
+  },
+  "status": "active",
+  "review_at_completed_sessions": 20
+}
