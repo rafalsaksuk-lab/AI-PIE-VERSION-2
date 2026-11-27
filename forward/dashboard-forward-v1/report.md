@@ -1,14 +1,12 @@
 # USD dashboard forward paper comparison
 
-Session: 2026-11-25. Observed: 2026-11-25T23:23:37Z. Completed sessions: 15/20. Status: active.
+Simulation only. Session 2026-11-27; observed 2026-11-27T23:47:23Z. Completed sessions: 16/20. Status: active.
 
-| Portfolio | Value USD | Profit USD | Maximum drawdown | Trades | Costs USD |
+| Strategy | Value USD | Profit USD | Max drawdown | Trades | Costs USD |
 |---|---:|---:|---:|---:|---:|
 | original_sma50 | 985.39 | -14.61 | 1.78% | 8 | 0.98 |
-| buy_and_hold | 903.72 | -96.28 | 22.63% | 8 | 1.00 |
+| buy_and_hold | 969.55 | -30.45 | 22.63% | 8 | 1.00 |
 
-No fills this session. No pending actions for 2026-11-27. Original SMA50 remains entirely in cash; benchmark holds all eight stocks. All eight closes remain below SMA50.
+No fills this session; no pending actions. All eight SMA50 targets remain cash. Benchmark retains all eight positions. Next execution session: 2026-11-30, open 14:30 UTC.
 
-Validated 69 SIP daily sessions per symbol, latest 50 complete sessions for signals, unchanged prior OHLC, and no returned corporate actions over lookback. Raw adjustment basis retained. No data failures or missed signal sessions. Calendar confirms November 26 holiday and November 27 early close at 18:00 UTC; next regular open November 27 at 14:30 UTC.
-
-Simulation only. Review and pause after 20 completed sessions; short results do not establish an edge.
+SIP daily bars: 70 matching calendar sessions per symbol; latest 50 used for SMA. Prior OHLC unchanged; no reported corporate actions over lookback. Raw adjustment basis retained. November 26 was a market holiday; November 27 closed at 18:00 UTC. No data failures or missing signal sessions. Initial USD1000 included in drawdown. Review and pause at 20 completed sessions; no rules changed. Short sample is not proof of an edge.
